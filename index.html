@@ -1525,6 +1525,17 @@ p{ margin: 0; }
   }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
   els.forEach(el => { if(!el.classList.contains('in')) io.observe(el); });
 })();
+
+// Google Ads — dispara conversão em qualquer clique em link do WhatsApp
+document.addEventListener('click', function(e) {
+  var link = e.target.closest('a[href*="wa.me"]');
+  if (!link) return;
+  gtag('event', 'conversion', {
+    'send_to': 'AW-16956426810/yvI-CLCJ5J4cELqUupU_',
+    'value': 1.0,
+    'currency': 'BRL'
+  });
+});
 </script>
 
 </body>
