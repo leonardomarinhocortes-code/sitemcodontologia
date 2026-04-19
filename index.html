@@ -5,17 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#C9A87A">
 
-<title>Dra. Nathália Marra — Dentista Infantil em Patos de Minas | Marra Cortes Odontologia</title>
-<meta name="description" content="Consultório odontológico especializado em crianças em Patos de Minas — MG. Ambiente acolhedor, atendimento humanizado. Agende pelo WhatsApp: (34) 99727-0834.">
+<title>Dra. Nathália Marra — Dentista em Patos de Minas | Marra Cortes Odontologia</title>
+<meta name="description" content="Consultório odontológico voltado ao atendimento infantil em Patos de Minas — MG. Ambiente acolhedor, atendimento humanizado. Agende pelo WhatsApp: (34) 99727-0834.">
 <meta name="keywords" content="dentista infantil Patos de Minas, odontopediatria Patos de Minas, dentista para criança Patos de Minas, Dra Nathália Marra, Marra Cortes Odontologia">
 <meta name="author" content="Dra. Nathália Marra">
 <link rel="canonical" href="https://marracortesodontologia.com.br/">
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 
-<meta property="og:title" content="Dra. Nathália Marra — Dentista Infantil em Patos de Minas">
-<meta property="og:description" content="Consultório especializado em crianças. Ambiente acolhedor e humanizado. Agende pelo WhatsApp.">
+<meta property="og:title" content="Dra. Nathália Marra — Dentista em Patos de Minas">
+<meta property="og:description" content="Consultório voltado ao atendimento infantil. Ambiente acolhedor e humanizado. Agende pelo WhatsApp.">
 <meta property="og:url" content="https://marracortesodontologia.com.br/">
 <meta property="og:type" content="website">
+<meta property="og:image" content="https://marracortesodontologia.com.br/fotos/IMG_6094.jpg">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -357,8 +358,9 @@ p{ margin: 0; }
 /* VISUAL */
 .hero-visual{
   position: relative;
-  aspect-ratio: 4/5;
+  width: 100%;
   max-width: 500px;
+  height: 625px;
   margin-left: auto;
 }
 .hero-photo{
@@ -366,29 +368,16 @@ p{ margin: 0; }
   inset: 0;
   border-radius: 260px 260px 40px 40px;
   overflow: hidden;
-  background: linear-gradient(160deg, var(--bege-claro), var(--dourado-claro));
   box-shadow: var(--shadow-lg);
   z-index: 2;
+  background: url('fotos/fotocomcatarina.png') center top / cover no-repeat;
 }
-.hero-photo .placeholder{
-  position: absolute;
-  inset: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 12px;
-  font-family: 'JetBrains Mono', ui-monospace, monospace;
-  font-size: 12px;
-  color: var(--marrom-medio);
-  text-align: center;
-  padding: 24px;
-  background-image:
-    repeating-linear-gradient(135deg,
-      transparent 0, transparent 18px,
-      rgba(201,168,122,0.14) 18px, rgba(201,168,122,0.14) 19px);
+.hero-photo img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
-.hero-photo .placeholder svg{ width: 56px; height: 56px; opacity: .5; }
 .hero-bg-circle{
   position: absolute;
   width: 80%;
@@ -436,7 +425,7 @@ p{ margin: 0; }
   .hero-ctas{ gap: 14px; }
   .hero-ctas .btn-wpp{ width: 100%; justify-content: center; }
   .hero-scroll{ margin: 0 auto; display: flex; justify-content: center; width: 100%; padding-top: 4px; }
-  .hero-visual{ margin: 0 auto; max-width: 320px; aspect-ratio: 1/1.1; }
+  .hero-visual{ margin: 0 auto; max-width: 320px; height: 360px; }
   .hero-photo{ border-radius: 180px 180px 24px 24px; }
   .hero-chip{ padding: 10px 14px; border-radius: 14px; }
   .hero-chip-2{ right: 2%; top: 2%; }
@@ -718,6 +707,12 @@ p{ margin: 0; }
       rgba(201,168,122,0.14) 18px, rgba(201,168,122,0.14) 19px);
 }
 .sobre-visual .placeholder svg{ width: 56px; height: 56px; opacity: .5; }
+.sobre-visual img{
+  width: 100%; height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
+}
 
 .sobre h2{
   font-size: clamp(32px, 4vw, 46px);
@@ -1112,10 +1107,10 @@ p{ margin: 0; }
   <div class="container">
     <div class="hero-grid">
       <div class="hero-copy reveal">
-        <span class="eyebrow">Odontopediatria · Patos de Minas — MG</span>
+        <span class="eyebrow">Clinica Odontológica · Patos de Minas — MG</span>
         <h1>O sorriso do seu filho<br><em>em boas mãos</em>.</h1>
         <p class="hero-sub">
-          Consultório odontológico especializado em crianças, com ambiente acolhedor e estrutura pensada para tornar a ida ao dentista uma experiência positiva desde o início.
+          Consultório odontológico voltado ao atendimento infantil, com ambiente acolhedor e estrutura pensada para tornar a ida ao dentista uma experiência positiva desde o início.
         </p>
         <div class="hero-ctas">
           <a href="https://wa.me/5534997270834?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta!" class="btn btn-wpp btn-lg" target="_blank" rel="noopener">
@@ -1128,31 +1123,7 @@ p{ margin: 0; }
 
       <div class="hero-visual reveal">
         <div class="hero-bg-circle"></div>
-        <div class="hero-photo">
-          <!-- SUBSTITUIR: foto profissional da Dra. Nathália Marra (retrato, vertical) -->
-          <div class="placeholder">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-            <div>Foto da Dra. Nathália<br>(retrato profissional)</div>
-          </div>
-        </div>
-        <div class="hero-chip hero-chip-1">
-          <div class="hero-chip-emoji">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.5-7 10-7 10Z"/></svg>
-          </div>
-          <div class="hero-chip-text">
-            <strong>Atendimento humanizado</strong>
-            <small>Cada criança no seu tempo</small>
-          </div>
-        </div>
-        <div class="hero-chip hero-chip-2">
-          <div class="hero-chip-emoji">
-            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.39 4.84L20 7.62l-4 3.9.94 5.48L12 14.77l-4.94 2.23L8 11.52 4 7.62l5.61-.78L12 2z"/></svg>
-          </div>
-          <div class="hero-chip-text">
-            <strong>Ambiente pensado</strong>
-            <small>para os pequenos</small>
-          </div>
-        </div>
+        <div class="hero-photo" role="img" aria-label="Dra. Nathália Marra com paciente — atendimento infantil acolhedor"></div>
       </div>
 
     </div>
@@ -1168,8 +1139,8 @@ p{ margin: 0; }
       <div class="trust-item reveal">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M12 14c-4 0-7 2.5-7 6v1h14v-1c0-3.5-3-6-7-6Z"/><path d="M17 3l1.2 2.4L21 6l-2 2 .5 3-2.5-1.5L14.5 11l.5-3-2-2 2.8-.6L17 3z"/></svg>
         <div class="trust-item-text">
-          <strong>Especialista Infantil</strong>
-          <small>Foco em odontopediatria</small>
+          <strong>Atendimento Humanizado</strong>
+          <small>Explicação Simples</small>
         </div>
       </div>
       <div class="trust-item reveal">
@@ -1257,15 +1228,14 @@ p{ margin: 0; }
 
     <div class="servicos-grid">
       <div class="serv-card reveal"><span class="serv-num">01</span><h3>Consulta e avaliação infantil</h3><p>Primeiro contato acolhedor, diagnóstico e plano individual.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">02</span><h3>Limpeza dental (profilaxia)</h3><p>Remoção de placa e polimento com técnica suave.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">03</span><h3>Aplicação de flúor</h3><p>Proteção do esmalte contra cáries, indolor e rápida.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">04</span><h3>Aplicação de selante</h3><p>Selamento preventivo nos molares para proteger sulcos.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">05</span><h3>Restaurações</h3><p>Obturações estéticas, confortáveis e adequadas à idade.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">02</span><h3>Limpeza dental (profilaxia)</h3><p>Remoção de placa e limpeza completa.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">03</span><h3>Aplicação de flúor</h3><p>Proteção do esmalte e ajuda a evitar cáries.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">04</span><h3>Aplicação de selante</h3><p>Barreira protetora para o acumulo de placas sobre os dentes.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">05</span><h3>Restaurações</h3><p>Restaurações estéticas, confortáveis e adequadas à idade.</p></div>
       <div class="serv-card reveal"><span class="serv-num">06</span><h3>Prevenção de cárie</h3><p>Orientações e acompanhamento para evitar problemas.</p></div>
       <div class="serv-card reveal"><span class="serv-num">07</span><h3>Acompanhamento do desenvolvimento bucal</h3><p>Monitoramento do crescimento dos arcos e dentes.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">08</span><h3>Tratamento de canal infantil</h3><p>Pulpotomia realizada com máximo conforto possível.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">09</span><h3>Extração de dentes de leite</h3><p>Procedimento seguro quando realmente necessário.</p></div>
-      <div class="serv-card reveal"><span class="serv-num">10</span><h3>Orientação de higiene bucal</h3><p>Ensino de escovação e fio dental para a idade certa.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">08</span><h3>Extração de dentes de leite</h3><p>Procedimento seguro quando realmente necessário.</p></div>
+      <div class="serv-card reveal"><span class="serv-num">09</span><h3>Orientação de higiene bucal</h3><p>Ensino de escovação e fio dental para todas as idades.</p></div>
     </div>
 
     <div class="servicos-cta reveal">
@@ -1316,19 +1286,15 @@ p{ margin: 0; }
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-visual reveal">
-        <!-- SUBSTITUIR: foto profissional da Dra. Nathália (em pé / sorrindo) -->
-        <div class="placeholder">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>
-          <div>Foto da Dra. Nathália<br>(retrato profissional — jaleco)</div>
-        </div>
+        <img src="fotos/fotodentista.png" alt="Dra. Nathália Marra sorrindo — odontopediatra em Patos de Minas">
       </div>
 
       <div class="sobre-copy reveal">
         <span class="eyebrow">Sobre a profissional</span>
         <h2>Dra. Nathália <em>Marra</em></h2>
         <div class="sobre-text">
-          <p>A Dra. Nathália Marra é dentista com atendimento especialmente voltado para crianças, em Patos de Minas — MG. Seu consultório foi pensado para criar um ambiente lúdico, acolhedor e seguro, onde cada criança possa ter uma experiência positiva com o dentista desde os primeiros anos de vida.</p>
-          <p>Com atenção individualizada e técnica atual, a Dra. Nathália cuida do desenvolvimento bucal dos pequenos com paciência, carinho e comprometimento — construindo um sorriso saudável para a vida toda.</p>
+          <p>A Dra. Nathália Marra é uma dentista com atendimento infantil, em Patos de Minas — MG. Seu consultório foi pensado para criar um ambiente lúdico, acolhedor e seguro, onde cada criança possa ter uma experiência positiva com o dentista desde os primeiros anos de vida.</p>
+          <p>Com atenção individualizada e um atendimento próximo pelo whatsapp, a Dra. Nathália cuida do desenvolvimento bucal dos pequenos com paciência, carinho e comprometimento, desde o atendimento no consultório até o dia a dia da criança.</p>
         </div>
         <span class="sobre-signature">Nathália Marra<small>Cirurgiã-Dentista</small></span>
         <a href="https://wa.me/5534997270834?text=Olá,%20gostaria%20de%20agendar%20a%20primeira%20consulta%20do%20meu%20filho." class="btn btn-wpp" target="_blank" rel="noopener">
@@ -1353,7 +1319,7 @@ p{ margin: 0; }
     <div class="faq-wrap reveal">
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>A partir de que idade meu filho pode ir ao dentista?</span><span class="faq-toggle" aria-hidden="true"></span></button>
-        <div class="faq-a"><div class="faq-a-inner">A primeira visita ao dentista deve acontecer assim que os primeiros dentes de leite aparecem, geralmente entre 6 e 12 meses de vida. Quanto antes, melhor — esse primeiro contato ajuda a criar uma relação positiva e previne problemas futuros.</div></div>
+        <div class="faq-a"><div class="faq-a-inner">A primeira visita ao dentista deve acontecer o mais cedo possível e o acompanhamento com a mãe já começa no pré-natal odontológico.</div></div>
       </div>
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Como é o ambiente do consultório para crianças?</span><span class="faq-toggle" aria-hidden="true"></span></button>
@@ -1374,6 +1340,10 @@ p{ margin: 0; }
       <div class="faq-item">
         <button class="faq-q" aria-expanded="false"><span>Qual o endereço do consultório?</span><span class="faq-toggle" aria-hidden="true"></span></button>
         <div class="faq-a"><div class="faq-a-inner">R. Agenor Maciel, 170 — Sala 405/406 — Edifício Centenário — Centro, Patos de Minas — MG. Estacionamento no entorno e fácil acesso.</div></div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-q" aria-expanded="false"><span>Há acompanhamento após a consulta?</span><span class="faq-toggle" aria-hidden="true"></span></button>
+        <div class="faq-a"><div class="faq-a-inner">Sim! Todo o acompanhamento pós-consulta é feito pelo WhatsApp. A Dra. Nathália disponibiliza o contato direto para que os responsáveis possam tirar dúvidas, relatar qualquer intercorrência ou acompanhar a evolução do tratamento com praticidade e agilidade, sem precisar esperar a próxima consulta.</div></div>
       </div>
     </div>
   </div>
@@ -1440,7 +1410,7 @@ p{ margin: 0; }
           title="Localização — Edifício Centenário, Patos de Minas"
           loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"
-          src="https://www.google.com/maps?q=Rua+Agenor+Maciel+170+Patos+de+Minas+MG&output=embed"
+          src="https://maps.google.com/maps?q=Drª+Nathália+Marra+-+Marra+Cortes+Odontologia&ll=-18.5885897,-46.5124719&z=17&output=embed"
           allowfullscreen></iframe>
       </div>
     </div>
