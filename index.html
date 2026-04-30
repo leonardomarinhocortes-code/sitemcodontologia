@@ -379,7 +379,7 @@ p{ margin: 0; }
   overflow: hidden;
   box-shadow: var(--shadow-lg);
   z-index: 2;
-  background: url('fotos/fotocomcatarina.png') center top / cover no-repeat;
+  background: url('fotos/fotocomcatarina.webp') center top / cover no-repeat;
 }
 .hero-photo img{
   width: 100%; height: 100%;
@@ -1270,19 +1270,34 @@ p{ margin: 0; }
 
     <div class="galeria-wrap reveal">
       <div class="gal gal-1">
-        <img src="fotos/IMG_6078.jpg" alt="Sala de espera com sofás brancos, parede de pedra e lustre dourado">
+        <picture>
+          <source type="image/webp" srcset="fotos/IMG_6078-800.webp 800w, fotos/IMG_6078.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="fotos/IMG_6078.jpg" alt="Sala de espera com sofás brancos, parede de pedra e lustre dourado" loading="lazy" decoding="async" width="1600" height="1200">
+        </picture>
       </div>
       <div class="gal gal-2">
-        <img src="fotos/IMG_6082.jpg" alt="Recepção com poltronas brancas e painel ripado de madeira">
+        <picture>
+          <source type="image/webp" srcset="fotos/IMG_6082-800.webp 800w, fotos/IMG_6082.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="fotos/IMG_6082.jpg" alt="Recepção com poltronas brancas e painel ripado de madeira" loading="lazy" decoding="async" width="1600" height="1200">
+        </picture>
       </div>
       <div class="gal gal-3">
-        <img src="fotos/IMG_6095.jpg" alt="Sala de atendimento odontológico com cadeira e equipamentos">
+        <picture>
+          <source type="image/webp" srcset="fotos/IMG_6095-800.webp 800w, fotos/IMG_6095.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="fotos/IMG_6095.jpg" alt="Sala de atendimento odontológico com cadeira e equipamentos" loading="lazy" decoding="async" width="1600" height="1200">
+        </picture>
       </div>
       <div class="gal gal-4">
-        <img src="fotos/IMG_6083.jpg" alt="Área de café e atendimento com lustre dourado">
+        <picture>
+          <source type="image/webp" srcset="fotos/IMG_6083-800.webp 800w, fotos/IMG_6083.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="fotos/IMG_6083.jpg" alt="Área de café e atendimento com lustre dourado" loading="lazy" decoding="async" width="1600" height="2133">
+        </picture>
       </div>
       <div class="gal gal-5">
-        <img src="fotos/IMG_6120.jpg" alt="Entrada iluminada da sala de espera">
+        <picture>
+          <source type="image/webp" srcset="fotos/IMG_6120-800.webp 800w, fotos/IMG_6120.webp 1600w" sizes="(max-width: 768px) 100vw, 50vw">
+          <img src="fotos/IMG_6120.jpg" alt="Entrada iluminada da sala de espera" loading="lazy" decoding="async" width="1600" height="2133">
+        </picture>
       </div>
     </div>
   </div>
@@ -1295,7 +1310,10 @@ p{ margin: 0; }
   <div class="container">
     <div class="sobre-grid">
       <div class="sobre-visual reveal">
-        <img src="fotos/fotodentista.png" alt="Dra. Nathália Marra sorrindo — odontopediatra em Patos de Minas">
+        <picture>
+          <source type="image/webp" srcset="fotos/fotodentista-800.webp 800w, fotos/fotodentista.webp 1024w" sizes="(max-width: 768px) 100vw, 500px">
+          <img src="fotos/fotodentista.jpg" alt="Dra. Nathália Marra sorrindo — odontopediatra em Patos de Minas" loading="lazy" decoding="async" width="1024" height="1536">
+        </picture>
       </div>
 
       <div class="sobre-copy reveal">
